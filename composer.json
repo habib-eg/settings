@@ -1,0 +1,35 @@
+{
+    "name": "habib/settings",
+    "description": "settings",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mohamedhabib",
+            "email": "mohamedhabibwork@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "ramsey/uuid": "^4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Habib\\Settings\\": "src/"
+        },
+        "files": [
+            "src/helpers/main.php",
+            "src/helpers/city.php",
+            "src/helpers/countries.php",
+            "src/helpers/states.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Habib\\Settings\\Providers\\SettingsServiceProvider"
+            ]
+        }
+    }
+}
